@@ -1,13 +1,21 @@
 import { expect } from 'chai'
-import { distanceBetweenLists, sortList, similarityBetweenLists } from './lists'
 
-describe('Day01 - TEMPLATE', function () {
+import {
+  distanceBetweenLists,
+  similarityBetweenLists,
+  sortList,
+} from './lists.js'
+
+describe('Day01 - Historian Hysteria', function () {
   let sampleInput
   let sortedSampleInput
 
   before(function () {
-    sampleInput = [ [ 3, 4, 2, 1, 3, 3 ], [ 4, 3, 5, 3, 9, 3 ] ]
-    sortedSampleInput = sampleInput.map((list)=> sortList(list))
+    sampleInput = [
+      [3, 4, 2, 1, 3, 3],
+      [4, 3, 5, 3, 9, 3],
+    ]
+    sortedSampleInput = sampleInput.map((list) => sortList(list))
   })
 
   describe('distanceBetweenLists', function () {
