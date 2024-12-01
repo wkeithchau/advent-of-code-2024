@@ -19,7 +19,7 @@ describe('Day01 - TEMPLATE', function () {
 
   describe('similarityBetweenLists', function () {
     it('Sample input', function () {
-      const total = tallyEntries(...sortedSampleInput)
+      const total = similarityBetweenLists(...sortedSampleInput)
       expect(total).to.equal(31)
     })
   })
