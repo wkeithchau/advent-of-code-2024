@@ -18,6 +18,7 @@
     "lint": "eslint .",
     "day0": "node .day00-template/index.js",
     "day01": "node day01-historian-hysteria/index.js",
-    "day02": "node day02-red-nosed-reports/index.js"
+    "day02": "node day02-red-nosed-reports/index.js",
+    "day03": "node day03-mull-it-over/index.js"
   }
 }
