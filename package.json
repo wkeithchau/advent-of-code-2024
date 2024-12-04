@@ -17,6 +17,7 @@
     "test": "mocha \"./{,!(node_modules)/**}/*test.js\"",
     "lint": "eslint .",
     "day0": "node .day00-template/index.js",
-    "day01": "node day01-historian-hysteria/index.js"
+    "day01": "node day01-historian-hysteria/index.js",
+    "day02": "node day02-red-nosed-reports/index.js"
   }
 }
