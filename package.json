@@ -22,6 +22,7 @@
     "day03": "node day03-mull-it-over/index.js",
     "day04": "node day04-ceres-search/index.js",
     "day05": "node day05-print-queue/index.js",
-    "day06": "node day06-guard-gallivant/index.js"
+    "day06": "node day06-guard-gallivant/index.js",
+    "day07": "node day07-bridge-repair/index.js"
   }
 }
