@@ -24,6 +24,7 @@
     "day05": "node day05-print-queue/index.js",
     "day06": "node day06-guard-gallivant/index.js",
     "day07": "node day07-bridge-repair/index.js",
-    "day08": "node day08-resonant-collinearity/index.js"
+    "day08": "node day08-resonant-collinearity/index.js",
+    "day09": "node day09-disk-fragmenter/index.js"
   }
 }
