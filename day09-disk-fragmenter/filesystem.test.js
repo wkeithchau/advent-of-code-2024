@@ -1,11 +1,17 @@
 import { expect } from 'chai'
 
-import { checksum, freeUpSpace, getBlocks } from './filesystem.js'
+import {
+  checksum,
+  freeUpFileSpace,
+  freeUpSpace,
+  getBlocks,
+} from './filesystem.js'
 
 describe('Day08 - Disk Fragmenter', function () {
   let sampleInput
   let sampleFs
   let sampleOptFs
+  let sampleOptFileFs
   let simpleSampleInput
   let simpleSampleFs
   let simpleSampleOptFs
@@ -14,6 +20,7 @@ describe('Day08 - Disk Fragmenter', function () {
     sampleInput = '2333133121414131402'
     sampleFs = '00...111...2...333.44.5555.6666.777.888899'
     sampleOptFs = '0099811188827773336446555566..............'
+    sampleOptFileFs = '00992111777.44.333....5555.6666.....8888..'
     simpleSampleInput = '12345'
     simpleSampleFs = '0..111....22222'
     simpleSampleOptFs = '022111222......'
@@ -43,6 +50,13 @@ describe('Day08 - Disk Fragmenter', function () {
     })
   })
 
+  describe('freeUpFileSpace', function () {
+    it('sampleInput', function () {
+      const blocks = freeUpFileSpace(sampleFs, 'string')
+      expect(blocks).to.equal(sampleOptFileFs)
+    })
+  })
+
   describe('checksum', function () {
     it('simpleSampleInput', function () {
       const sum = checksum(simpleSampleOptFs)
@@ -52,6 +66,11 @@ describe('Day08 - Disk Fragmenter', function () {
     it('sampleInput', function () {
       const sum = checksum(sampleOptFs)
       expect(sum).to.equal(1928)
+    })
+
+    it('sampleInput - smart', function () {
+      const sum = checksum(sampleOptFileFs)
+      expect(sum).to.equal(2858)
     })
   })
 })
